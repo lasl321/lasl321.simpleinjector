@@ -23,7 +23,7 @@ namespace lasl321.simpleinjector.test
         {
             var instance = _container.GetInstance<ISomethingThatHasDependency>();
 
-            Assert.That(instance.CallDependency(), Is.EqualTo("This is a dependency"));
+            Assert.That(instance.CallDependency(), Is.EqualTo("This is a dependency 123"));
         }
     }
 

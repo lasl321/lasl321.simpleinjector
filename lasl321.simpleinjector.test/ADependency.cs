@@ -4,7 +4,7 @@
     {
         public string ReturnString()
         {
-            return "This is a dependency";
+            return "This is a dependency 123";
         }
     }
 }
