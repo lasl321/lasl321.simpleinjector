@@ -31,13 +31,13 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="SimpleInjector">
-      <HintPath>..\..\..\..\..\tmp\nugetrepo\SimpleInjector.2.5.2\lib\net45\SimpleInjector.dll</HintPath>
+      <HintPath>..\packages\SimpleInjector.2.5.2\lib\net45\SimpleInjector.dll</HintPath>
     </Reference>
     <Reference Include="SimpleInjector.Diagnostics">
-      <HintPath>..\..\..\..\..\tmp\nugetrepo\SimpleInjector.2.5.2\lib\net45\SimpleInjector.Diagnostics.dll</HintPath>
+      <HintPath>..\packages\SimpleInjector.2.5.2\lib\net45\SimpleInjector.Diagnostics.dll</HintPath>
     </Reference>
     <Reference Include="SimpleInjector.Packaging">
-      <HintPath>..\..\..\..\..\tmp\nugetrepo\SimpleInjector.Packaging.2.5.2\lib\net40-client\SimpleInjector.Packaging.dll</HintPath>
+      <HintPath>..\packages\SimpleInjector.Packaging.2.5.2\lib\net40-client\SimpleInjector.Packaging.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
