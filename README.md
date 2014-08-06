@@ -2,3 +2,5 @@
 
 lasl321.simpleinjector
 ======================
+
+Helpers and extensions for SimpleInjector.
