@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Collections.Generic;
 using System.Reflection;
 using SimpleInjector;
 
@@ -8,17 +6,9 @@ namespace lasl321.simpleinjector
 {
     public static class Extensions
     {
-        public static void RegisterPackageAssemblies(this Container container)
+        public static void RegisterPackages<T>(this Container container) where T : IEnumerable<Assembly>, new()
         {
-            var packageAssemblies = Assembly.GetCallingAssembly()
-                                            .ExportedTypes
-                                            .Where(x => x.Name == "PackageAssemblies")
-                                            .Select(Activator.CreateInstance)
-                                            .Cast<IEnumerable<Assembly>>()
-                                            .DefaultIfEmpty(Enumerable.Empty<Assembly>())
-                                            .First();
-
-            container.RegisterPackages(packageAssemblies);
+            container.RegisterPackages(new T());
         }
     }
 }

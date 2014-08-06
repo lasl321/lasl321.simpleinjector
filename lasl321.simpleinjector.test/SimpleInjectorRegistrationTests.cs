@@ -15,7 +15,7 @@ namespace lasl321.simpleinjector.test
         public void SetUp()
         {
             _container = new Container();
-            _container.RegisterPackageAssemblies();
+            _container.RegisterPackages<PackageAssemblies>();
         }
 
         [Test]
